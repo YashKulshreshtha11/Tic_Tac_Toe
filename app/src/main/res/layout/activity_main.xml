@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/black"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_gravity="top"
+        android:layout_margin="15dp"
+        android:paddingBottom="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/game" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/btn1"
+            android:backgroundTint="#9FC5CA"
+            android:textColor="@color/black"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginLeft="11dp"
+            android:backgroundTint="#9FC5CA"
+            android:onClick="Check"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginLeft="11dp"
+            android:backgroundTint="#9FC5CA"
+            android:textColor="@color/black"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:backgroundTint="#9FC5CA"
+            android:textColor="@color/black"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#9FC5CA"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#9FC5CA"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:backgroundTint="#9FC5CA"
+            android:textColor="@color/black"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_marginLeft="11dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#9FC5CA"
+            android:onClick="Check" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="11dp"
+            android:backgroundTint="#9FC5CA"
+            android:onClick="Check" />
+
+    </GridLayout>
+
+    <Button
+            android:id="@+id/btn10"
+            android:layout_width="wrap_content"
+            android:backgroundTint="#71AEDF"
+            android:layout_height="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/restart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="newGame"
+            />
+
+</LinearLayout>
